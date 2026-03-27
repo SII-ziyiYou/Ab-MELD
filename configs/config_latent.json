@@ -1,0 +1,20 @@
+{
+    "dataset_name": "All_seqs",
+    "data_path": "data/ziyi_baseline/ziyi_4-1_from_3-1_2.4.csv",
+    "max_seq_len": 1024,
+    "enc_dec_model": "PLM/prot_t5_xl_uniref50",
+    "train_batch_size": 32,
+    "eval_batch_size": 32,
+    "num_encoder_latents": 32,
+    "num_decoder_latents": 32,
+    "dim_ae": 256,
+    "num_layers": 2,
+    "l2_normalize_latents": true,
+    "output_dir": "latent_model_Anti_32_64",
+    "learning_rate": 5e-5,
+    "num_train_steps": 50000,
+    "lr_schedule": "linear",
+    "lr_warmup_steps": 500,
+    "eval_every": 1000,
+    "optimizer": "adamw"
+}
